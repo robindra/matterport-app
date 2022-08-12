@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Upload And Convert Excel File into JSON in Javascript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="assets/js/xlsx.full.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+        <h4>Upload And Convert Excel File into JSON in Javascript</h4>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Upload And Convert Excel File into JSON in Javascript</div>
+            <div class="panel-body">
+                <!-- Input type file to upload excel file -->
+                <input type="file" id="fileUpload" accept=".xls,.xlsx" /><br />
+                <button type="button" id="uploadExcel">Convert</button>
+
+                <!-- Render parsed JSON data here -->
+                <div style="margin-top:10px;">
+                    <pre id="jsonData-original"></pre>
+                    <pre id="jsonData-formated"></pre>
+                </div>
+            </div>
+        </div>
+
+        <h4>Get Model</h4>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Get model from backend</div>
+            <div class="panel-body">
+                <button type="button" id="getModel" onclick="getModel()">Get</button>
+
+                <!-- Render parsed JSON data here -->
+                <div style="margin-top:10px;">
+                    <pre id="model-data"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
